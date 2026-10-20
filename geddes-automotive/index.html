@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Geddes Automotive — redesign concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111827;--bg:#f8fafc;--accent:#2563eb;--soft:#e2e8f0}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:17px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.banner{background:var(--ink);color:var(--bg);font-size:13px;text-align:center;padding:8px 16px}
+.banner a{color:var(--bg);font-weight:600}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:600 22px Fraunces,serif;letter-spacing:-.01em;text-decoration:none}
+nav .links{display:flex;gap:28px;align-items:center;font-size:15px}nav .links a{text-decoration:none;opacity:.8}
+.btn{display:inline-block;background:var(--accent);color:#fff!important;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600;opacity:1!important;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--ink)!important;border:1.5px solid var(--ink)}
+.hero{padding:72px 0 96px;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent)}
+h1{font:600 clamp(40px,6vw,72px)/1.04 Fraunces,serif;letter-spacing:-.02em;margin:16px 0 22px}
+.hero p{font-size:19px;opacity:.8;max-width:34ch;margin-bottom:32px}.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.card{background:var(--soft);border-radius:28px;padding:32px;position:relative;overflow:hidden}
+.card .big{font:600 56px Fraunces,serif;color:var(--accent);line-height:1}
+.card ul{list-style:none;padding:0;margin-top:20px;display:grid;gap:12px}.card li::before{content:"✓  ";color:var(--accent);font-weight:700}
+section{padding:88px 0}h2{font:600 clamp(30px,4vw,44px)/1.1 Fraunces,serif;letter-spacing:-.015em;margin:12px 0 40px;max-width:20ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.svc{background:var(--soft);border-radius:20px;padding:28px;transition:transform .25s}.svc:hover{transform:translateY(-4px)}
+.svc h3{font-size:19px;margin-bottom:8px}.svc p{opacity:.75;font-size:15.5px}
+.num{font:600 14px Inter;color:var(--accent);margin-bottom:18px;display:block}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}.about p{opacity:.8;margin-bottom:16px}
+.contact{background:var(--ink);color:var(--bg);border-radius:32px;padding:56px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.contact h2{color:var(--bg);margin-bottom:16px}.contact dl{display:grid;gap:18px}.contact dt{font-size:12px;text-transform:uppercase;letter-spacing:.12em;opacity:.6}.contact dd{font-size:18px}
+footer{padding:40px 0;font-size:14px;opacity:.6;text-align:center}
+.reveal{opacity:0;transform:translateY(24px);transition:all .8s cubic-bezier(.2,.7,.2,1)}.reveal.in{opacity:1;transform:none}
+@media(max-width:800px){.hero,.about,.contact{grid-template-columns:1fr}nav .links a:not(.btn){display:none}.hero{padding:32px 0 64px}.contact{padding:32px}section{padding:64px 0}}
+</style></head><body>
+<div class="banner">Redesign concept made for Geddes Automotive by Dheerax — not the live site. <a href="mailto:dheeraxlearner@gmail.com">Like it? Get in touch</a></div>
+<div class="wrap">
+<nav><a class="logo" href="#">Geddes Automotive</a><div class="links"><a href="#services">Services</a><a href="#about">About</a><a class="btn" href="#contact">Book a service</a></div></nav>
+<header class="hero"><div class="reveal"><span class="eyebrow">MTA mechanical &amp; auto electrical · Onehunga, Auckland</span><h1>Auckland&#x27;s all-vehicle mechanics.</h1><p>Mechanical and auto electrical repairs, servicing and NZTA-approved WoFs for cars, vans and trucks — with courtesy cars while yours is in the shop.</p>
+<div class="cta-row"><a class="btn" href="tel:096367064">Call 09 636 7064</a><a class="btn ghost" href="#services">See services</a></div></div>
+<div class="card reveal"><div class="big">WoF</div><div style="opacity:.75;margin-top:6px">NZTA-approved inspections on site</div><ul><li>MTA approved garage</li><li>Courtesy cars available</li><li>Cars, vans &amp; trucks</li></ul></div></header>
+</div>
+<section id="services"><div class="wrap"><span class="eyebrow">What we do</span><h2>Everything your vehicle needs, under one roof.</h2><div class="grid"><div class="svc"><span class="num">01</span><h3>Servicing &amp; WoF</h3><p>Scheduled vehicle servicing and NZTA-approved Warrant of Fitness inspections.</p></div><div class="svc"><span class="num">02</span><h3>Auto electrical</h3><p>Batteries, alternators, starter motors, ABS and dash faults diagnosed and repaired.</p></div><div class="svc"><span class="num">03</span><h3>Brakes, clutch &amp; suspension</h3><p>Brake discs machined on site, clutches, CV joints, bearings, steering and suspension.</p></div><div class="svc"><span class="num">04</span><h3>Cambelts &amp; engines</h3><p>Cambelt kits, timing chains, water pumps, head machining and engine replacement.</p></div><div class="svc"><span class="num">05</span><h3>Exhausts</h3><p>Muffler repairs, replacements and performance exhausts.</p></div><div class="svc"><span class="num">06</span><h3>Breakdown &amp; insurance repairs</h3><p>Tow truck breakdown help and insurance repair work, plus truck CoF repairs.</p></div></div></div></section>
+<section id="about"><div class="wrap about"><div class="reveal"><span class="eyebrow">About</span><h2>Trusted by Onehunga drivers.</h2></div><div class="reveal"><p>Geddes Automotive is an MTA garage in Onehunga handling mechanical and auto electrical work on all vehicles.</p><p>From a quick quote to a full engine job, you&#x27;ll get straight answers and a courtesy car while we work.</p></div></div></section>
+<section id="contact"><div class="wrap"><div class="contact reveal"><div><h2>Need a quote? Call the workshop.</h2><p style="opacity:.75;margin-bottom:28px">Quotes and estimates on all repairs.</p><a class="btn" href="tel:096367064">Call 09 636 7064</a></div>
+<dl><div><dt>Phone</dt><dd>09 636 7064</dd></div><div><dt>Email</dt><dd>geddes@geddesautomotive.co.nz</dd></div><div><dt>Address</dt><dd>38–40 Selwyn Street, Onehunga, Auckland</dd></div></dl></div></div></section>
+<footer>© 2026 Geddes Automotive</footer>
+<script>const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.12});document.querySelectorAll('.reveal,.svc').forEach(el=>{el.classList.add('reveal');io.observe(el)})</script>
+</body></html>
